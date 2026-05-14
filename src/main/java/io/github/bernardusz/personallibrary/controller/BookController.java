@@ -34,7 +34,7 @@ public class BookController {
   }
 
   @GetMapping("/search")
-  public  String searchBooks(@RequestParam String title, Model model) {
+  public String searchBooks(@RequestParam String title, Model model) {
     model.addAttribute("books", bookRepository.findByTitle(title));
     return "index";
   }

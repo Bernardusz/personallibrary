@@ -1,10 +1,9 @@
 package io.github.bernardusz.personallibrary.repository;
 
 import io.github.bernardusz.personallibrary.model.Book;
+import java.util.List;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 @Repository
 public class BookRepository {
